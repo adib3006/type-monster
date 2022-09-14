@@ -19,8 +19,38 @@
           <h1 class="title">Blog</h1>
           <div class="line"></div>
         </div>
-        <div id="histories"></div>
-      </div>
+        <div id="blogs">
+            <div class="blog">
+                <h2>Q1. Local Storage vs Session Storage ?</h2>
+                <p>Local storage is not session based. It stores data in local memory and it needs to be cleared through JavaScript or other methods. On the other hand session storage is session based memory as the name suggests. It is automatically cleared when the current session expires.</p>
+            </div>
+            <div class="blog">
+                <h2>Q2. Global Scope vs Block Scope ?</h2>
+                <p>ES6 introduced two powerful key words. 'let' and 'const' can provide a functionality such that when declared inside a {} they can not be accessed outside. Where variables declared with 'var' can be accessed from outside of any scope. The above functionaity of 'let' and 'const' is called block scope.
+                Global scope is when these three keywords are used to declare variables outside of any function or scope. In this case they can be accessed from anywhere globally in most cases. 
+                </p>
+            </div>
+            <div class="blog">
+                <h2>Q3. How JavaScript Event Loop Works ?</h2>
+                <p>JavaScript is a single threaded language which means it can not run functions in parallel manner. Here the event loop comes to solve the issue. The theoritical definition is 'The common denominator in all environments is a built-in mechanism called the event loop, which handles the execution of multiple chunks of your program over time, each time invoking the JS Engine.'
+                That actually means that JS maintains a call stack and a queue of callback functions. All the commands come in the stack and the ones which require some latency in execution are simply sent to the callback queue. Eventually After their latency they are shifted in the call stack and executed. This mechanism is simply called JS event loop.
+                </p>
+            </div>
+            <div class="blog">
+                <h2>Q4. Which ways one can get undefined value ?</h2>
+                <p>Basically there are 8 ways to get undefined value.
+                    1. The variable which is declared but not initialized will give undefined value if called.
+                    2. The value of a function with no return functionality.
+                    3. Parameter which is not passed will get undefined value.
+                    4. Return without any value will give undefined.
+                    5. Any property that doesn't exist on an object will give undefined.
+                    6. Accessing array element which surpasses array index range will give undefined.
+                    7. If an element is deleted from an array that index will give undefined.
+                    8. Set a value directy to undefined.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
